@@ -58,11 +58,14 @@
           </template>
         </Column>
       </DataTable>
+      <ConfirmDialog />
     </section>
   </MainLayout>
 </template>
 
 <script lang="ts">
+import ConfirmDialog from 'primevue/confirmdialog'      // ⬅️ nuevo
+import { useConfirm } from 'primevue/useconfirm'  
 import { defineComponent, computed, ref, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useBooksStore } from '@/store/useBooksStore'
@@ -83,12 +86,14 @@ export default defineComponent({
     Button,
     DataTable,
     Column,
+    ConfirmDialog,
   },
   setup() {
     const router = useRouter()
     const store  = useBooksStore()
 
     /* estado local */
+    const confirm = useConfirm() // ⬅️ nuevo
     const search       = ref('')
     const genreFilter  = ref<string | null>(null)
 
@@ -113,7 +118,16 @@ export default defineComponent({
     /* navegación / acciones */
     const goToCreate = () => router.push('/books/new')
     const editBook   = (id: number) => router.push({ name: 'BookEdit', params: { id } })
-    const deleteBook = (id: number) => store.deleteBook(id)
+    const deleteBook = (id: number) => {
+  confirm.require({
+    message: '¿Deseas eliminar este libro?',
+    header: 'Confirmar Eliminación',
+    icon: 'pi pi-exclamation-triangle',
+    acceptLabel: 'Sí',
+    rejectLabel: 'No',
+    accept: () => store.deleteBook(id),
+  })
+}
 
     return {
       search,

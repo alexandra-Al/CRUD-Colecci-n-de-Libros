@@ -7,6 +7,7 @@ import ToastService from 'primevue/toastservice'
 import 'primeicons/primeicons.css'
 import 'primevue/resources/themes/saga-blue/theme.css';
 import 'primevue/resources/primevue.min.css';  
+import ConfirmationService from 'primevue/confirmationservice'
 
 import './assets/main.css' // aquí va Tailwind
 
@@ -16,5 +17,6 @@ app.use(createPinia())
 app.use(router)
 app.use(PrimeVue)
 app.use(ToastService)
+app.use(ConfirmationService) 
 
 app.mount('#app')

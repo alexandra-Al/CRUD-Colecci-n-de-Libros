@@ -41,10 +41,9 @@
 </template>
 
 <script setup lang="ts">
-import { reactive, watch } from 'vue'
+import { computed } from 'vue'
 import { Book } from '@/store/useBooksStore'
 
-// PrimeVue components
 import InputText from 'primevue/inputtext'
 import InputNumber from 'primevue/inputnumber'
 import Button from 'primevue/button'
@@ -52,7 +51,8 @@ import Button from 'primevue/button'
 const props = defineProps<{ modelValue: Book }>()
 const emit  = defineEmits(['update:modelValue', 'save', 'cancel'])
 
-const local = reactive<Book>({ ...props.modelValue })
-
-watch(local, (val) => emit('update:modelValue', val), { deep: true })
+const local = computed({
+  get: () => props.modelValue,
+  set: (val) => emit('update:modelValue', val),
+})
 </script>

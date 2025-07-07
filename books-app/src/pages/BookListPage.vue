@@ -3,7 +3,7 @@
     <section class="p-6 table">
       <h1 class="mx-[5vw]">Lista de Libros</h1>
 
-      <!-- Barra de búsqueda + filtro + botón -->
+      <!-- Barra de búsqueda, filtro y botón -->
       <div class="flex flex-col md:flex-row gap-4 mb-4">
         <InputText
           v-model="search"
@@ -11,7 +11,7 @@
           class="mx-[5vw] mb-[1vw]"
         />
 
-        <!-- NUEVO: filtro por género -->
+        <!-- filtro por género -->
         <Dropdown
           v-model="genreFilter"
           :options="genres"
@@ -97,20 +97,20 @@ export default defineComponent({
     const router = useRouter()
     const store  = useBooksStore()
 
-    /* estado local */
-    const confirm = useConfirm() // ⬅️ nuevo
+  
+    const confirm = useConfirm() 
     const search       = ref('')
     const genreFilter  = ref<string | null>(null)
 
-    /* carga inicial */
+  
     onMounted(() => store.fetchBooks())
 
-    /* géneros únicos para el dropdown */
+    
     const genres = computed(() =>
       [...new Set(store.books.map(b => b.genre))].map(g => ({ label: g, value: g }))
     )
 
-    /* filtrado reactivo */
+  
     const filteredBooks = computed(() =>
       store.books.filter(b =>
         (b.title .toLowerCase().includes(search.value.toLowerCase()) ||

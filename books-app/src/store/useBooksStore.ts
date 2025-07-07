@@ -1,4 +1,3 @@
-// src/stores/books.ts
 import { defineStore } from 'pinia'
 import axios from 'axios'
 

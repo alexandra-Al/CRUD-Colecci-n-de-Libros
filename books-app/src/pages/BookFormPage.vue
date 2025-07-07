@@ -37,7 +37,7 @@ const book = ref<Book>({ ...template })
 /* validación */
 const { errors, isValid } = useBookValidation(book.value)
 
-/* ✅ bandera para saber si ya se intentó guardar */
+
 const submitted = ref(false)
 
 const isEdit = computed(() => !!route.params.id)
@@ -50,10 +50,10 @@ onMounted(async () => {
   }
 })
 
-/* guardar (create / update) con feedback y manejo de error */
+
 async function save() {
-  submitted.value = true            // ✅ activa visualización de errores
-  if (!isValid.value) return        //   detiene si el form es inválido
+  submitted.value = true            
+  if (!isValid.value) return        
 
   try {
     if (isEdit.value && route.params.id) {

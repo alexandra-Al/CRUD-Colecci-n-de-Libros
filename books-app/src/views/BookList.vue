@@ -1,7 +1,6 @@
-<!-- src/views/BookList.vue -->
 <template>
   <MainLayout>
-    <!-- Tabla con PrimeVue DataTable -->
+  
     <BookTable
       :books="books"
       @create="goToNew"
@@ -9,7 +8,6 @@
       @delete="confirmDelete"
     />
 
-    <!-- Diálogo de confirmación y notificaciones -->
     <ConfirmDialog />
     <Toast />
   </MainLayout>
@@ -39,13 +37,13 @@ export default defineComponent({
   },
 
   computed: {
-    // Libros reactivos desde Pinia
+  
     books() {
       return this.store.books;
     },
   },
 
-  // Carga inicial
+  
   created() {
     this.store.fetchBooks();
   },

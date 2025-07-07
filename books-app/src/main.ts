@@ -11,9 +11,9 @@ import 'primeicons/primeicons.css'
 import 'primevue/resources/themes/saga-blue/theme.css'
 import 'primevue/resources/primevue.min.css'
 
-import './assets/main.css'   // Tailwind
+import './assets/main.css'   
 
-/* 🌎 Locale español (solo lo necesario para el calendario) */
+
 const localeEs = {
   firstDayOfWeek: 1,
   dayNames: [
@@ -38,7 +38,7 @@ const app = createApp(App)
 app.use(createPinia())
 app.use(router)
 
-/* 👉 Registramos PrimeVue con el locale en español */
+
 app.use(PrimeVue, { locale: localeEs })
 
 app.use(ToastService)

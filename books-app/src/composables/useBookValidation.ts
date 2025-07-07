@@ -8,7 +8,7 @@ export function useBookValidation(book: Book) {
     year: null,
     genre: null,
     price: null,
-    published: null,   // ← ahora lo controlaremos
+    published: null,  
     id: null,
   })
 

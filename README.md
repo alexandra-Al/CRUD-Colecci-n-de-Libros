@@ -88,21 +88,27 @@ npm run dev
 ## EVIDENCIA 
 Evidencia- 1
 ![alt text](image-3.png)
+
 Evidencia- 2
 Buscar por titulo o autor
 ![alt text](image-4.png)
+
 Evidencia- 3
 Buscar por genero
 ![alt text](image-5.png)
+
 Evidencia- 4
 Editar Orgullo y Odio por Orgullo y Prejuicio
 ![alt text](image-8.png)
+
 Evidencia- 5
 Calendario
 ![alt text](image-9.png)
+
 Evidencia- 6
 Confirmacion de eliminación
 ![alt text](image-11.png)
+
 Evidencia- 7
 Registrar nuevo libro
 ![alt text](image-12.png)

@@ -85,35 +85,30 @@ npm run dev
 
 # Levantar backend 
 npm run dev
-## EVIDENCIA 
-Evidencia- 1
-![alt text](image-3.png)
+## EVIDENCIA (Imagenes)
+## 📷 Evidencias
 
-Evidencia- 2
-Buscar por titulo o autor
-![alt text](image-4.png)
+### Evidencia 1 – Vista general del sistema
+![Evidencia 1](https://drive.google.com/uc?id=1EH-f7nOlsvP7D9ykyGpWfyLp3RsocVVz)
 
-Evidencia- 3
-Buscar por genero
-![alt text](image-5.png)
+###  Evidencia 2 – Búsqueda por título o autor
+![Evidencia 2](https://drive.google.com/uc?id=111URTq6-ERAP_q4-tLRZOHZndKa9c3Ux)
 
-Evidencia- 4
-Editar Orgullo y Odio por Orgullo y Prejuicio
-![alt text](image-8.png)
+###  Evidencia 3 – Filtro por género
+![Evidencia 3](https://drive.google.com/uc?id=1bbbhQlDX9ziAUixScOCvqLOFMKzTmkj8)
 
-Evidencia- 5
-Calendario
-![alt text](image-9.png)
+###  Evidencia 4 – Edición de libro
+![Evidencia 4](https://drive.google.com/uc?id=1NGt2ZxH5pM0tD3up8gZ_g-aFg85EFI5k)
 
-Evidencia- 6
-Confirmacion de eliminación
-![alt text](image-11.png)
+###  Evidencia 5 – Calendario de publicación
+![Evidencia 5](https://drive.google.com/uc?id=1NKUKMotr_QAqRLnACMd1mgRplZ33dGCz)
 
-Evidencia- 7
-Registrar nuevo libro
-![alt text](image-12.png)
-![alt text](image-13.png)
+### Evidencia 6 – Confirmación de eliminación
+![Evidencia 6](https://drive.google.com/uc?id=10-nSJ4b9IY3ijJGvFcCVebgVp4_z2UJX)
 
+### Evidencia 7 – Registro de nuevo libro
+![Evidencia 7a](https://drive.google.com/uc?id=1tnu5zR7rZDJiVOpgPLJnVqLQkIB7cB91)
+![Evidencia 7b](https://drive.google.com/uc?id=19E4EaZZiY_gzD7GOpGqyxfzfoGJkXgw8)
 # Video del proyecto
 Puedes ver una demostración del funcionamiento en este video
 [ Ver Video en Google Drive](https://drive.google.com/file/d/18Jc4RofWGOpGLDetyxvnpCgI7VFvzIV0/view?usp=drive_link)

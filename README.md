@@ -109,7 +109,7 @@ npm run dev
 ![Evidencia 7a](https://drive.google.com/uc?id=1tnu5zR7rZDJiVOpgPLJnVqLQkIB7cB91)
 ![Evidencia 7b](https://drive.google.com/uc?id=19E4EaZZiY_gzD7GOpGqyxfzfoGJkXgw8)
 
-## 🎬 Video del Proyecto
+##  Video del Proyecto
 
 [![Video del proyecto](https://img.youtube.com/vi/wHVd-H3Uavo/0.jpg)](https://youtu.be/wHVd-H3Uavo)
 

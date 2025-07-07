@@ -1,14 +1,14 @@
 <template>
   <MainLayout>
-    <section class="p-6">
-      <h1 class="text-2xl font-bold mb-4">Lista de Libros</h1>
+    <section class="p-6 table">
+      <h1 class="mx-[5vw]">Lista de Libros</h1>
 
       <!-- Barra de búsqueda + filtro + botón -->
       <div class="flex flex-col md:flex-row gap-4 mb-4">
         <InputText
           v-model="search"
           placeholder="Buscar por título o autor"
-          class="flex-1"
+          class="mx-[5vw] mb-[1vw]"
         />
 
         <!-- NUEVO: filtro por género -->
@@ -19,10 +19,10 @@
           optionValue="value"
           placeholder="Todos los géneros"
           showClear
-          class="w-full md:w-60"
+          class="mx-[5vw] mb-[1vw]"
         />
 
-        <Button label="Crear Libro" icon="pi pi-plus" @click="goToCreate" />
+        <Button label="Registrar Libro" class="button-color mb-[1vw] mx-[5vw]" @click="goToCreate" />
       </div>
 
       <DataTable
@@ -35,7 +35,7 @@
         removableSort
         selectionMode="single"
         dataKey="id"
-        class="p-datatable-sm"
+        class="p-datatable-sm mx-[5vw]"
       >
         <Column field="title"  header="Título"  sortable />
         <Column field="author" header="Autor"   sortable />
@@ -52,12 +52,12 @@
           <template #body="slotProps">
             <Button
               icon="pi pi-pencil"
-              class="p-button-text p-button-sm"
+              class="p-button-text  modify icon-color p-button-sm"
               @click="editBook(slotProps.data.id)"
             />
             <Button
               icon="pi pi-trash"
-              class="p-button-text p-button-sm text-red-500"
+              class="p-button-text delete icon-color p-button-sm text-red-500"
               @click="deleteBook(slotProps.data.id)"
             />
           </template>

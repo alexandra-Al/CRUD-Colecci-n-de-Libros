@@ -7,7 +7,7 @@ import Toast from 'primevue/toast'
 <template>
    <Toast />
   <div class="bg-green-200 text-center p-6 rounded shadow">
-    <h1 class="text-2xl font-bold">¡Tailwind funciona!</h1>
+  
   </div>
   <RouterView />
 </template>

@@ -97,7 +97,7 @@ npm run dev
 ###  Evidencia 3 – Filtro por género
 ![Evidencia 3](https://drive.google.com/uc?id=1bbbhQlDX9ziAUixScOCvqLOFMKzTmkj8)
 
-###  Evidencia 4 – Edición de libro
+###  Evidencia 4 – Edición de libro (Editar Orgullo y Odio por Orgullo y Prejuicio)
 ![Evidencia 4](https://drive.google.com/uc?id=1NGt2ZxH5pM0tD3up8gZ_g-aFg85EFI5k)
 
 ###  Evidencia 5 – Calendario de publicación

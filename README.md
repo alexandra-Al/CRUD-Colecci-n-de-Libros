@@ -85,10 +85,9 @@ npm run dev
 
 # Levantar backend 
 npm run dev
-## EVIDENCIA (Imagenes)
-## 📷 Evidencias
 
-### Evidencia 1 – Vista general del sistema
+## EVIDENCIA (Imagenes)
+###  Evidencia 1 – Vista general del sistema
 ![Evidencia 1](https://drive.google.com/uc?id=1EH-f7nOlsvP7D9ykyGpWfyLp3RsocVVz)
 
 ###  Evidencia 2 – Búsqueda por título o autor
@@ -97,7 +96,7 @@ npm run dev
 ###  Evidencia 3 – Filtro por género
 ![Evidencia 3](https://drive.google.com/uc?id=1bbbhQlDX9ziAUixScOCvqLOFMKzTmkj8)
 
-###  Evidencia 4 – Edición de libro (Editar Orgullo y Odio por Orgullo y Prejuicio)
+###  Evidencia 4 – Edición de libro (Editar Orgullo y Odio por Orgullo y prejuicio )
 ![Evidencia 4](https://drive.google.com/uc?id=1NGt2ZxH5pM0tD3up8gZ_g-aFg85EFI5k)
 
 ###  Evidencia 5 – Calendario de publicación
@@ -109,9 +108,10 @@ npm run dev
 ### Evidencia 7 – Registro de nuevo libro
 ![Evidencia 7a](https://drive.google.com/uc?id=1tnu5zR7rZDJiVOpgPLJnVqLQkIB7cB91)
 ![Evidencia 7b](https://drive.google.com/uc?id=19E4EaZZiY_gzD7GOpGqyxfzfoGJkXgw8)
-# Video del proyecto
-Puedes ver una demostración del funcionamiento en este video
-[ Ver Video en Google Drive](https://drive.google.com/file/d/18Jc4RofWGOpGLDetyxvnpCgI7VFvzIV0/view?usp=drive_link)
+
+## 🎬 Video del Proyecto
+
+[🔗 Ver video del proyecto en Google Drive](https://drive.google.com/file/d/1B-tPTuh4zWB8Ey6E9r8i7qFfBfHTrseH/view?usp=sharing)
 
 ## TECNOLOGIAS UTILIZADAS
 Vue 3 con Composition API y Options API.

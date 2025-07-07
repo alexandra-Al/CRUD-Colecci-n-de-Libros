@@ -28,7 +28,7 @@
       <DataTable
         :value="filteredBooks"
         paginator
-        rows="5"
+        :rows="5"
         :rowsPerPageOptions="[5, 10, 20]"
         sortField="title"
         :sortOrder="1"
@@ -42,6 +42,11 @@
         <Column field="year"   header="Año"     sortable />
         <Column field="genre"  header="Género"  sortable />
         <Column field="price"  header="Precio"  sortable />
+      <Column header="Publicado">
+  <template #body="slotProps">
+    {{ formatDate(slotProps.data.published) }}
+  </template>
+</Column>
 
         <Column header="Acciones">
           <template #body="slotProps">
@@ -114,6 +119,10 @@ export default defineComponent({
         (!genreFilter.value || b.genre === genreFilter.value)
       )
     )
+ function formatDate(dateStr: string | null) {
+    if (!dateStr) return '-'
+    return new Date(dateStr).toISOString().slice(0, 10)  // yyyy-mm-dd
+  }
 
     /* navegación / acciones */
     const goToCreate = () => router.push('/books/new')
@@ -127,7 +136,7 @@ export default defineComponent({
     rejectLabel: 'No',
     accept: () => store.deleteBook(id),
   })
-}
+} 
 
     return {
       search,
@@ -137,6 +146,7 @@ export default defineComponent({
       goToCreate,
       editBook,
       deleteBook,
+       formatDate, 
     }
   },
 })

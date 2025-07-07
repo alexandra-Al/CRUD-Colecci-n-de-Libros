@@ -25,6 +25,16 @@
       Género
       <InputText v-model="local.genre" class="w-full mt-1" required />
     </label>
+    <!-- Fecha de publicación -->
+<label class="font-medium text-gray-700">
+  Fecha de publicación
+  <Calendar
+    v-model="local.published"
+    dateFormat="yy-mm-dd"
+    showIcon
+    class="w-full mt-1"
+  />
+</label>
 
     <!-- Precio -->
     <label class="font-medium text-gray-700">
@@ -42,8 +52,8 @@
 
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Book } from '@/store/useBooksStore'
-
+import { type Book } from '@/store/useBooksStore'
+import Calendar from 'primevue/calendar'
 import InputText from 'primevue/inputtext'
 import InputNumber from 'primevue/inputnumber'
 import Button from 'primevue/button'

@@ -9,6 +9,7 @@ export interface Book {
   year: number
   genre: string
   price: number
+   published: Date | null
 }
 
 export const useBooksStore = defineStore('books', {

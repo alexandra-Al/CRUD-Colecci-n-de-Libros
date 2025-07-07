@@ -30,7 +30,7 @@ import DataTable from 'primevue/datatable';
 import Column from 'primevue/column';
 import InputText from 'primevue/inputtext';
 import BaseButton from '@/components/atoms/BaseButton.vue';
-import { Book } from '@/store/useBooksStore';
+import {type Book } from '@/store/useBooksStore';
 
 defineProps<{ books: Book[] }>();
 defineEmits(['create', 'edit', 'delete']);

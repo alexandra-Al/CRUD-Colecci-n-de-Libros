@@ -15,14 +15,14 @@ import { useRoute, useRouter } from 'vue-router'
 import { useToast } from 'primevue/usetoast'
 
 import BookForm               from '@/components/organisms/BookForm.vue'
-import { useBooksStore, Book } from '@/store/useBooksStore'
+import { useBooksStore, type Book } from '@/store/useBooksStore'
 
 const route  = useRoute()
 const router = useRouter()
 const toast  = useToast()
 const store  = useBooksStore()
 
-const template: Book = { title: '', author: '', year: new Date().getFullYear(), genre: '', price: 0 }
+const template: Book = { title: '', author: '', year: new Date().getFullYear(), genre: '', price: 0, published:null}
 const book = ref<Book>({ ...template })
 
 const isEdit = computed(() => !!route.params.id)

@@ -4,4 +4,5 @@ export interface Book {
   year: number;
   genre: string;
   price: number;
+  published: string | null;
 }

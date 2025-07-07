@@ -111,7 +111,7 @@ npm run dev
 
 ## 🎬 Video del Proyecto
 
-[🔗 Ver video del proyecto en Google Drive](https://drive.google.com/file/d/1B-tPTuh4zWB8Ey6E9r8i7qFfBfHTrseH/view?usp=sharing)
+[![Video del proyecto](https://img.youtube.com/vi/wHVd-H3Uavo/0.jpg)](https://youtu.be/wHVd-H3Uavo)
 
 ## TECNOLOGIAS UTILIZADAS
 Vue 3 con Composition API y Options API.

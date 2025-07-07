@@ -115,13 +115,21 @@ npm run dev
 
 ## TECNOLOGIAS UTILIZADAS
 Vue 3 con Composition API y Options API.
+
 TypeScript 
+
 Vite 
+
 Pinia para gestión de estado global.
+
 Vue Router con lazy loading.
+
 PrimeVue para componentes UI (DataTable, Toast, ConfirmDialog, Chart).
+
 Tailwind CSS 4.
+
 Axios para consumo de API REST.
+
 Atomic Design para organización de componentes.
 
 ## ESTRUCTURA DEL PROYECTO (Atomic Design)
